@@ -13,6 +13,7 @@
 		AC11138527A8CC31003B9000 /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11138427A8CC31003B9000 /* RemoteAddAccountTests.swift */; };
 		AC11138E27A8CC68003B9000 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC11136827A8C8AE003B9000 /* Domain.framework */; };
 		AC11138F27A8CC68003B9000 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC11136827A8C8AE003B9000 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC141F6627AAA3B0001778DE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F6527AAA3B0001778DE /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		AC11137827A8CC31003B9000 /* DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC11137F27A8CC31003B9000 /* DataLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC11138427A8CC31003B9000 /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
+		AC141F6527AAA3B0001778DE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				AC11136F27A8C934003B9000 /* AddAcount.swift */,
 				AC11137127A8CAC5003B9000 /* AccountModel.swift */,
+				AC141F6527AAA3B0001778DE /* Model.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC141F6627AAA3B0001778DE /* Model.swift in Sources */,
 				AC11137027A8C934003B9000 /* AddAcount.swift in Sources */,
 				AC11137227A8CAC5003B9000 /* AccountModel.swift in Sources */,
 			);
