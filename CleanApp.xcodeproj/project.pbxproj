@@ -19,6 +19,10 @@
 		AC141F7E27AB1BA0001778DE /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F7A27AB1BA0001778DE /* HttpError.swift */; };
 		AC141F7F27AB1BA0001778DE /* RemoteAddAcount.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F7C27AB1BA0001778DE /* RemoteAddAcount.swift */; };
 		AC141F8227AB2836001778DE /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F8127AB2836001778DE /* ExtensionHelpers.swift */; };
+		AC36D1B327AD590900452122 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D1B227AD590900452122 /* TextExtensions.swift */; };
+		AC36D1B527AD599400452122 /* TestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D1B427AD599400452122 /* TestFactory.swift */; };
+		AC36D1B827AD59E000452122 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D1B727AD59E000452122 /* HttpClientSpy.swift */; };
+		AC36D1BA27AD5A4B00452122 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D1B927AD5A4B00452122 /* AccountModelFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,10 @@
 		AC141F7A27AB1BA0001778DE /* HttpError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		AC141F7C27AB1BA0001778DE /* RemoteAddAcount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAddAcount.swift; sourceTree = "<group>"; };
 		AC141F8127AB2836001778DE /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
+		AC36D1B227AD590900452122 /* TextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtensions.swift; sourceTree = "<group>"; };
+		AC36D1B427AD599400452122 /* TestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactory.swift; sourceTree = "<group>"; };
+		AC36D1B727AD59E000452122 /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
+		AC36D1B927AD5A4B00452122 /* AccountModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModelFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +146,8 @@
 		AC11138327A8CC31003B9000 /* DataLayerTests */ = {
 			isa = PBXGroup;
 			children = (
+				AC36D1B627AD59C300452122 /* Http */,
+				AC36D1B127AD58DD00452122 /* Helpers */,
 				AC141F6F27AAA655001778DE /* UseCasses */,
 			);
 			path = DataLayerTests;
@@ -206,6 +216,24 @@
 				AC141F8127AB2836001778DE /* ExtensionHelpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AC36D1B127AD58DD00452122 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AC36D1B227AD590900452122 /* TextExtensions.swift */,
+				AC36D1B427AD599400452122 /* TestFactory.swift */,
+				AC36D1B927AD5A4B00452122 /* AccountModelFactory.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AC36D1B627AD59C300452122 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				AC36D1B727AD59E000452122 /* HttpClientSpy.swift */,
+			);
+			path = Http;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +406,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC36D1B527AD599400452122 /* TestFactory.swift in Sources */,
+				AC36D1B827AD59E000452122 /* HttpClientSpy.swift in Sources */,
+				AC36D1B327AD590900452122 /* TextExtensions.swift in Sources */,
+				AC36D1BA27AD5A4B00452122 /* AccountModelFactory.swift in Sources */,
 				AC11138527A8CC31003B9000 /* RemoteAddAccountTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
