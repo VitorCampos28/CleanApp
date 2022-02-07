@@ -7,6 +7,7 @@
 
 import XCTest
 import Alamofire
+import DataLayer
 
 class AlamofireAdapter {
     private let session: Session
@@ -16,8 +17,7 @@ class AlamofireAdapter {
     }
     
     func post(to url: URL, with data: Data?) {
-        let json = data == nil ? nil : try? JSONSerialization.jsonObject(with: data!, options: .fragmentsAllowed) as? [String: Any]
-        session.request(url, method: .post, parameters: json, encoding: JSONEncoding.default).resume()
+        session.request(url, method: .post, parameters: data?.toJson(), encoding: JSONEncoding.default).resume()
     }
 }
 
@@ -38,11 +38,13 @@ class AlamofireAdapterTests: XCTestCase {
 }
 
 extension AlamofireAdapterTests {
-    func makeSut() -> AlamofireAdapter {
+    func makeSut(file: StaticString = #file, line: UInt = #line) -> AlamofireAdapter {
         let configuration = URLSessionConfiguration.default
         configuration.protocolClasses = [UrlProtocolStub.self]
         let session = Session(configuration: configuration)
-        return AlamofireAdapter(session: session)
+        let sut = AlamofireAdapter(session: session)
+        checkMemoryLeak(for: sut, file: file, line: line)
+        return sut
     }
     func testRequestFor(url: URL = makeURL(), data: Data?, action: @escaping (URLRequest) -> Void){
         let sut = makeSut()
