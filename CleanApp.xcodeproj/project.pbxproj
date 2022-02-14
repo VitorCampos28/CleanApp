@@ -36,6 +36,8 @@
 		AC46CD2C27B2A3F000FB5F44 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC11137827A8CC31003B9000 /* DataLayer.framework */; };
 		AC63D61127BAE02E00EAF864 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC63D60927BAE02C00EAF864 /* Presentation.framework */; };
 		AC63D61627BAE02E00EAF864 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D61527BAE02E00EAF864 /* SignUpPresenterTests.swift */; };
+		AC63D61F27BAF93600EAF864 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D61E27BAF93600EAF864 /* SignUpPresenter.swift */; };
+		AC63D62427BAFA2800EAF864 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D62327BAFA2800EAF864 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,13 @@
 			remoteGlobalIDString = AC63D60827BAE02C00EAF864;
 			remoteInfo = Presentation;
 		};
+		AC63D62027BAF96800EAF864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC11135027A8C77A003B9000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC11136727A8C8AE003B9000;
+			remoteInfo = Domain;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -149,6 +158,8 @@
 		AC63D60927BAE02C00EAF864 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC63D61027BAE02E00EAF864 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC63D61527BAE02E00EAF864 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
+		AC63D61E27BAF93600EAF864 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		AC63D62327BAFA2800EAF864 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -414,6 +425,8 @@
 		AC63D60A27BAE02C00EAF864 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				AC63D62527BAFA4000EAF864 /* Presenters */,
+				AC63D62227BAFA1E00EAF864 /* Views */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -421,9 +434,33 @@
 		AC63D61427BAE02E00EAF864 /* PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
-				AC63D61527BAE02E00EAF864 /* SignUpPresenterTests.swift */,
+				AC63D62627BAFB4D00EAF864 /* Presenters */,
 			);
 			path = PresentationTests;
+			sourceTree = "<group>";
+		};
+		AC63D62227BAFA1E00EAF864 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC63D62327BAFA2800EAF864 /* AlertView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC63D62527BAFA4000EAF864 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				AC63D61E27BAF93600EAF864 /* SignUpPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		AC63D62627BAFB4D00EAF864 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				AC63D61527BAE02E00EAF864 /* SignUpPresenterTests.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -589,6 +626,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AC63D62127BAF96800EAF864 /* PBXTargetDependency */,
 			);
 			name = Presentation;
 			productName = Presentation;
@@ -646,6 +684,7 @@
 					};
 					AC63D60827BAE02C00EAF864 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					AC63D60F27BAE02E00EAF864 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -805,6 +844,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC63D62427BAFA2800EAF864 /* AlertView.swift in Sources */,
+				AC63D61F27BAF93600EAF864 /* SignUpPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -858,6 +899,11 @@
 			isa = PBXTargetDependency;
 			target = AC63D60827BAE02C00EAF864 /* Presentation */;
 			targetProxy = AC63D61227BAE02E00EAF864 /* PBXContainerItemProxy */;
+		};
+		AC63D62127BAF96800EAF864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC11136727A8C8AE003B9000 /* Domain */;
+			targetProxy = AC63D62027BAF96800EAF864 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1270,6 +1316,7 @@
 		AC63D61827BAE02E00EAF864 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1292,6 +1339,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1299,6 +1347,7 @@
 		AC63D61927BAE02E00EAF864 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1328,6 +1377,7 @@
 		AC63D61A27BAE02E00EAF864 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1344,6 +1394,7 @@
 		AC63D61B27BAE02E00EAF864 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
