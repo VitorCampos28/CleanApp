@@ -15,6 +15,7 @@
 		AC11138F27A8CC68003B9000 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC11136827A8C8AE003B9000 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC12876227BBFBC2007510FF /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D1B927AD5A4B00452122 /* AccountModelFactory.swift */; };
 		AC12876327BC08E1007510FF /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D1B227AD590900452122 /* TextExtensions.swift */; };
+		AC12876527BC1DEB007510FF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12876427BC1DEB007510FF /* LoadingView.swift */; };
 		AC141F6627AAA3B0001778DE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F6527AAA3B0001778DE /* Model.swift */; };
 		AC141F7527AB18BC001778DE /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F7427AB18BC001778DE /* DomainError.swift */; };
 		AC141F7D27AB1BA0001778DE /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F7927AB1BA0001778DE /* HttpPostClient.swift */; };
@@ -141,6 +142,7 @@
 		AC11137827A8CC31003B9000 /* DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC11137F27A8CC31003B9000 /* DataLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC11138427A8CC31003B9000 /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
+		AC12876427BC1DEB007510FF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		AC141F6527AAA3B0001778DE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AC141F7427AB18BC001778DE /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
 		AC141F7927AB1BA0001778DE /* HttpPostClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 			isa = PBXGroup;
 			children = (
 				AC63D62327BAFA2800EAF864 /* AlertView.swift */,
+				AC12876427BC1DEB007510FF /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -858,6 +861,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC63D62427BAFA2800EAF864 /* AlertView.swift in Sources */,
+				AC12876527BC1DEB007510FF /* LoadingView.swift in Sources */,
 				AC63D61F27BAF93600EAF864 /* SignUpPresenter.swift in Sources */,
 				AC63D62B27BAFDCA00EAF864 /* EmailValidator.swift in Sources */,
 			);
