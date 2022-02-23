@@ -42,6 +42,7 @@
 		AC63D61F27BAF93600EAF864 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D61E27BAF93600EAF864 /* SignUpPresenter.swift */; };
 		AC63D62427BAFA2800EAF864 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D62327BAFA2800EAF864 /* AlertView.swift */; };
 		AC63D62B27BAFDCA00EAF864 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D62A27BAFDCA00EAF864 /* EmailValidator.swift */; };
+		AC83B44627C6DE4F00BE728D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B44527C6DE4F00BE728D /* SignUpViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +167,7 @@
 		AC63D61E27BAF93600EAF864 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		AC63D62327BAFA2800EAF864 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		AC63D62A27BAFDCA00EAF864 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		AC83B44527C6DE4F00BE728D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -458,6 +460,7 @@
 		AC63D62527BAFA4000EAF864 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				AC83B44427C6DE2E00BE728D /* SignUp */,
 				AC63D61E27BAF93600EAF864 /* SignUpPresenter.swift */,
 			);
 			path = Presenters;
@@ -477,6 +480,14 @@
 				AC63D62A27BAFDCA00EAF864 /* EmailValidator.swift */,
 			);
 			path = Validators;
+			sourceTree = "<group>";
+		};
+		AC83B44427C6DE2E00BE728D /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				AC83B44527C6DE4F00BE728D /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -862,6 +873,7 @@
 			files = (
 				AC63D62427BAFA2800EAF864 /* AlertView.swift in Sources */,
 				AC12876527BC1DEB007510FF /* LoadingView.swift in Sources */,
+				AC83B44627C6DE4F00BE728D /* SignUpViewModel.swift in Sources */,
 				AC63D61F27BAF93600EAF864 /* SignUpPresenter.swift in Sources */,
 				AC63D62B27BAFDCA00EAF864 /* EmailValidator.swift in Sources */,
 			);
