@@ -43,6 +43,7 @@
 		AC63D62427BAFA2800EAF864 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D62327BAFA2800EAF864 /* AlertView.swift */; };
 		AC63D62B27BAFDCA00EAF864 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D62A27BAFDCA00EAF864 /* EmailValidator.swift */; };
 		AC83B44627C6DE4F00BE728D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B44527C6DE4F00BE728D /* SignUpViewModel.swift */; };
+		AC83B44827C6DEA400BE728D /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B44727C6DEA400BE728D /* SignUpMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +169,7 @@
 		AC63D62327BAFA2800EAF864 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		AC63D62A27BAFDCA00EAF864 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		AC83B44527C6DE4F00BE728D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		AC83B44727C6DEA400BE728D /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -461,7 +463,6 @@
 			isa = PBXGroup;
 			children = (
 				AC83B44427C6DE2E00BE728D /* SignUp */,
-				AC63D61E27BAF93600EAF864 /* SignUpPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -485,7 +486,9 @@
 		AC83B44427C6DE2E00BE728D /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				AC63D61E27BAF93600EAF864 /* SignUpPresenter.swift */,
 				AC83B44527C6DE4F00BE728D /* SignUpViewModel.swift */,
+				AC83B44727C6DEA400BE728D /* SignUpMapper.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -871,6 +874,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC83B44827C6DEA400BE728D /* SignUpMapper.swift in Sources */,
 				AC63D62427BAFA2800EAF864 /* AlertView.swift in Sources */,
 				AC12876527BC1DEB007510FF /* LoadingView.swift in Sources */,
 				AC83B44627C6DE4F00BE728D /* SignUpViewModel.swift in Sources */,
