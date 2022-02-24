@@ -20,6 +20,8 @@
 		AC1362F827C801D100D8A619 /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1362F727C801D100D8A619 /* SignUpViewControllerTests.swift */; };
 		AC13630327C8069D00D8A619 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC13630227C8069D00D8A619 /* SignUpViewController.swift */; };
 		AC13630527C806FB00D8A619 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC13630427C806FB00D8A619 /* SignUp.storyboard */; };
+		AC13630627C80A6900D8A619 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC63D60927BAE02C00EAF864 /* Presentation.framework */; };
+		AC13630727C80A6900D8A619 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC63D60927BAE02C00EAF864 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC141F6627AAA3B0001778DE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F6527AAA3B0001778DE /* Model.swift */; };
 		AC141F7527AB18BC001778DE /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F7427AB18BC001778DE /* DomainError.swift */; };
 		AC141F7D27AB1BA0001778DE /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F7927AB1BA0001778DE /* HttpPostClient.swift */; };
@@ -76,6 +78,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = AC1362EA27C801D000D8A619;
 			remoteInfo = IOSUI;
+		};
+		AC13630827C80A6900D8A619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC11135027A8C77A003B9000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC63D60827BAE02C00EAF864;
+			remoteInfo = Presentation;
 		};
 		AC36D1C927AD5B2B00452122 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -136,6 +145,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AC11138F27A8CC68003B9000 /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC13630A27C80A6A00D8A619 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC13630727C80A6900D8A619 /* Presentation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +246,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC13630627C80A6900D8A619 /* Presentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,10 +726,12 @@
 				AC1362E727C801D000D8A619 /* Sources */,
 				AC1362E827C801D000D8A619 /* Frameworks */,
 				AC1362E927C801D000D8A619 /* Resources */,
+				AC13630A27C80A6A00D8A619 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AC13630927C80A6900D8A619 /* PBXTargetDependency */,
 			);
 			name = IOSUI;
 			productName = IOSUI;
@@ -1105,6 +1128,11 @@
 			isa = PBXTargetDependency;
 			target = AC1362EA27C801D000D8A619 /* IOSUI */;
 			targetProxy = AC1362F427C801D100D8A619 /* PBXContainerItemProxy */;
+		};
+		AC13630927C80A6900D8A619 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC63D60827BAE02C00EAF864 /* Presentation */;
+			targetProxy = AC13630827C80A6900D8A619 /* PBXContainerItemProxy */;
 		};
 		AC36D1CA27AD5B2B00452122 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
