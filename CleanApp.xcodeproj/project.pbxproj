@@ -17,7 +17,9 @@
 		AC12876327BC08E1007510FF /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D1B227AD590900452122 /* TextExtensions.swift */; };
 		AC12876527BC1DEB007510FF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12876427BC1DEB007510FF /* LoadingView.swift */; };
 		AC1362F327C801D100D8A619 /* IOSUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1362EB27C801D000D8A619 /* IOSUI.framework */; };
-		AC1362F827C801D100D8A619 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1362F727C801D100D8A619 /* SignUpViewController.swift */; };
+		AC1362F827C801D100D8A619 /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1362F727C801D100D8A619 /* SignUpViewControllerTests.swift */; };
+		AC13630327C8069D00D8A619 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC13630227C8069D00D8A619 /* SignUpViewController.swift */; };
+		AC13630527C806FB00D8A619 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC13630427C806FB00D8A619 /* SignUp.storyboard */; };
 		AC141F6627AAA3B0001778DE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F6527AAA3B0001778DE /* Model.swift */; };
 		AC141F7527AB18BC001778DE /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F7427AB18BC001778DE /* DomainError.swift */; };
 		AC141F7D27AB1BA0001778DE /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F7927AB1BA0001778DE /* HttpPostClient.swift */; };
@@ -161,7 +163,9 @@
 		AC12876427BC1DEB007510FF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		AC1362EB27C801D000D8A619 /* IOSUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IOSUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1362F227C801D100D8A619 /* IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC1362F727C801D100D8A619 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AC1362F727C801D100D8A619 /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
+		AC13630227C8069D00D8A619 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AC13630427C806FB00D8A619 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		AC141F6527AAA3B0001778DE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AC141F7427AB18BC001778DE /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
 		AC141F7927AB1BA0001778DE /* HttpPostClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
@@ -351,6 +355,8 @@
 		AC1362EC27C801D000D8A619 /* IOSUI */ = {
 			isa = PBXGroup;
 			children = (
+				AC13630227C8069D00D8A619 /* SignUpViewController.swift */,
+				AC13630427C806FB00D8A619 /* SignUp.storyboard */,
 			);
 			path = IOSUI;
 			sourceTree = "<group>";
@@ -358,7 +364,7 @@
 		AC1362F627C801D100D8A619 /* IOSUITests */ = {
 			isa = PBXGroup;
 			children = (
-				AC1362F727C801D100D8A619 /* SignUpViewController.swift */,
+				AC1362F727C801D100D8A619 /* SignUpViewControllerTests.swift */,
 			);
 			path = IOSUITests;
 			sourceTree = "<group>";
@@ -848,6 +854,7 @@
 					};
 					AC1362EA27C801D000D8A619 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					AC1362F127C801D100D8A619 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -927,6 +934,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC13630527C806FB00D8A619 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1013,6 +1021,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC13630327C8069D00D8A619 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1020,7 +1029,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC1362F827C801D100D8A619 /* SignUpViewController.swift in Sources */,
+				AC1362F827C801D100D8A619 /* SignUpViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1423,6 +1432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1447,6 +1457,7 @@
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1455,6 +1466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1486,6 +1498,7 @@
 		AC1362FE27C801D100D8A619 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1503,6 +1516,7 @@
 		AC1362FF27C801D100D8A619 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
