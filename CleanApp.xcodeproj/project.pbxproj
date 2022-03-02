@@ -28,6 +28,7 @@
 		AC141F7E27AB1BA0001778DE /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F7A27AB1BA0001778DE /* HttpError.swift */; };
 		AC141F7F27AB1BA0001778DE /* RemoteAddAcount.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F7C27AB1BA0001778DE /* RemoteAddAcount.swift */; };
 		AC141F8227AB2836001778DE /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC141F8127AB2836001778DE /* ExtensionHelpers.swift */; };
+		AC22D32127D011B4009B1957 /* TesteExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC22D32027D011B4009B1957 /* TesteExtensions.swift */; };
 		AC36D1B327AD590900452122 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D1B227AD590900452122 /* TextExtensions.swift */; };
 		AC36D1B527AD599400452122 /* TestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D1B427AD599400452122 /* TestFactory.swift */; };
 		AC36D1B827AD59E000452122 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D1B727AD59E000452122 /* HttpClientSpy.swift */; };
@@ -192,6 +193,7 @@
 		AC141F7A27AB1BA0001778DE /* HttpError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		AC141F7C27AB1BA0001778DE /* RemoteAddAcount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAddAcount.swift; sourceTree = "<group>"; };
 		AC141F8127AB2836001778DE /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
+		AC22D32027D011B4009B1957 /* TesteExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteExtensions.swift; sourceTree = "<group>"; };
 		AC36D1B227AD590900452122 /* TextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtensions.swift; sourceTree = "<group>"; };
 		AC36D1B427AD599400452122 /* TestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactory.swift; sourceTree = "<group>"; };
 		AC36D1B727AD59E000452122 /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
@@ -376,8 +378,7 @@
 		AC1362EC27C801D000D8A619 /* IOSUI */ = {
 			isa = PBXGroup;
 			children = (
-				AC13630227C8069D00D8A619 /* SignUpViewController.swift */,
-				AC13630427C806FB00D8A619 /* SignUp.storyboard */,
+				AC22D31D27D01156009B1957 /* Scenes */,
 			);
 			path = IOSUI;
 			sourceTree = "<group>";
@@ -385,7 +386,8 @@
 		AC1362F627C801D100D8A619 /* IOSUITests */ = {
 			isa = PBXGroup;
 			children = (
-				AC1362F727C801D100D8A619 /* SignUpViewControllerTests.swift */,
+				AC22D31E27D0118C009B1957 /* Helpers */,
+				AC22D31B27D0112D009B1957 /* SignUp */,
 			);
 			path = IOSUITests;
 			sourceTree = "<group>";
@@ -444,6 +446,39 @@
 			isa = PBXGroup;
 			children = (
 				AC141F8127AB2836001778DE /* ExtensionHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AC22D31A27D01118009B1957 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				AC13630427C806FB00D8A619 /* SignUp.storyboard */,
+				AC13630227C8069D00D8A619 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		AC22D31B27D0112D009B1957 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				AC1362F727C801D100D8A619 /* SignUpViewControllerTests.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		AC22D31D27D01156009B1957 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AC22D31A27D01118009B1957 /* SignUp */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AC22D31E27D0118C009B1957 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AC22D32027D011B4009B1957 /* TesteExtensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1053,6 +1088,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC1362F827C801D100D8A619 /* SignUpViewControllerTests.swift in Sources */,
+				AC22D32127D011B4009B1957 /* TesteExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
