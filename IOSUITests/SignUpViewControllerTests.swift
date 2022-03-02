@@ -13,20 +13,25 @@ import Presentation
 
 class IOSUITests: XCTestCase {
      func test_loading_is_disable_on_start() {
-         let sb = UIStoryboard(name: "SignUp", bundle: Bundle(for: SignUpViewController.self))
-         let sut = sb.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
-         sut.loadViewIfNeeded()
+         let sut = makeSut()
          XCTAssertEqual(sut.loadingIndicator?.isAnimating, false)
     }
     func test_sut_implements_loadingView() {
-        let sb = UIStoryboard(name: "SignUp", bundle: Bundle(for: SignUpViewController.self))
-        let sut = sb.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        let sut = makeSut()
         XCTAssertNotNil(sut as LoadingView)
    }
     func test_sut_implements_alertView() {
-        let sb = UIStoryboard(name: "SignUp", bundle: Bundle(for: SignUpViewController.self))
-        let sut = sb.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        let sut = makeSut()
         XCTAssertNotNil(sut as AlertView)
    }
 
+}
+
+extension IOSUITests{
+    func makeSut() -> SignUpViewController {
+        let sb = UIStoryboard(name: "SignUp", bundle: Bundle(for: SignUpViewController.self))
+        let sut = sb.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        sut.loadViewIfNeeded()
+        return sut
+    }
 }
