@@ -44,6 +44,7 @@
 		AC46CD2327B29EFA00FB5F44 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46CD2227B29EFA00FB5F44 /* UrlProtocolStub.swift */; };
 		AC46CD2B27B2A3F000FB5F44 /* UseCasesIntegrationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46CD2A27B2A3F000FB5F44 /* UseCasesIntegrationsTests.swift */; };
 		AC46CD2C27B2A3F000FB5F44 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC11137827A8CC31003B9000 /* DataLayer.framework */; };
+		AC4DA29227D2B18A00189F3F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DA29127D2B18A00189F3F /* UIViewControllerExtension.swift */; };
 		AC63D61127BAE02E00EAF864 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC63D60927BAE02C00EAF864 /* Presentation.framework */; };
 		AC63D61627BAE02E00EAF864 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D61527BAE02E00EAF864 /* SignUpPresenterTests.swift */; };
 		AC63D61F27BAF93600EAF864 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D61E27BAF93600EAF864 /* SignUpPresenter.swift */; };
@@ -205,6 +206,7 @@
 		AC46CD2227B29EFA00FB5F44 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		AC46CD2827B2A3F000FB5F44 /* UseCasesIntegrationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC46CD2A27B2A3F000FB5F44 /* UseCasesIntegrationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesIntegrationsTests.swift; sourceTree = "<group>"; };
+		AC4DA29127D2B18A00189F3F /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		AC63D60927BAE02C00EAF864 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC63D61027BAE02E00EAF864 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC63D61527BAE02E00EAF864 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
@@ -378,6 +380,7 @@
 		AC1362EC27C801D000D8A619 /* IOSUI */ = {
 			isa = PBXGroup;
 			children = (
+				AC4DA29027D2B16700189F3F /* Helpers */,
 				AC22D31D27D01156009B1957 /* Scenes */,
 			);
 			path = IOSUI;
@@ -548,6 +551,14 @@
 				AC46CD2A27B2A3F000FB5F44 /* UseCasesIntegrationsTests.swift */,
 			);
 			path = UseCasesIntegrationsTests;
+			sourceTree = "<group>";
+		};
+		AC4DA29027D2B16700189F3F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AC4DA29127D2B18A00189F3F /* UIViewControllerExtension.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		AC63D60A27BAE02C00EAF864 /* Presentation */ = {
@@ -1079,6 +1090,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4DA29227D2B18A00189F3F /* UIViewControllerExtension.swift in Sources */,
 				AC13630327C8069D00D8A619 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
