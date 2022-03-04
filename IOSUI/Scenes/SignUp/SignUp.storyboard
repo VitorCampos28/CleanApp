@@ -98,8 +98,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="EmailTextField" destination="CIT-Q2-hl0" id="4PK-8z-TPT"/>
                         <outlet property="confirmationTextField" destination="HZ3-6B-P9l" id="fHd-3Y-qaZ"/>
+                        <outlet property="emailTextField" destination="CIT-Q2-hl0" id="I3g-7j-4KX"/>
                         <outlet property="loadingIndicator" destination="KXA-mN-uZ9" id="Cf8-B9-heB"/>
                         <outlet property="nameTextField" destination="X4I-ap-wrN" id="O05-Lb-Dwe"/>
                         <outlet property="passwordTextField" destination="gZv-yq-Zvl" id="TJM-d7-jmi"/>
