@@ -50,6 +50,7 @@
 		AC4DA2A927D2BC5800189F3F /* EmailValidatorAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DA2A827D2BC5800189F3F /* EmailValidatorAdapterTests.swift */; };
 		AC4DA2B327D2C12E00189F3F /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC63D60927BAE02C00EAF864 /* Presentation.framework */; platformFilter = ios; };
 		AC4DA2B427D2C12E00189F3F /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC63D60927BAE02C00EAF864 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC4DA2BB27D2C78E00189F3F /* EmailValidatorAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DA2BA27D2C78E00189F3F /* EmailValidatorAdapter.swift */; };
 		AC63D61127BAE02E00EAF864 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC63D60927BAE02C00EAF864 /* Presentation.framework */; };
 		AC63D61627BAE02E00EAF864 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D61527BAE02E00EAF864 /* SignUpPresenterTests.swift */; };
 		AC63D61F27BAF93600EAF864 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D61E27BAF93600EAF864 /* SignUpPresenter.swift */; };
@@ -241,6 +242,7 @@
 		AC4DA29C27D2BC5600189F3F /* Validation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Validation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4DA2A327D2BC5800189F3F /* ValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4DA2A827D2BC5800189F3F /* EmailValidatorAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorAdapterTests.swift; sourceTree = "<group>"; };
+		AC4DA2BA27D2C78E00189F3F /* EmailValidatorAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorAdapter.swift; sourceTree = "<group>"; };
 		AC63D60927BAE02C00EAF864 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC63D61027BAE02E00EAF864 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC63D61527BAE02E00EAF864 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
@@ -619,6 +621,7 @@
 		AC4DA29D27D2BC5600189F3F /* Validation */ = {
 			isa = PBXGroup;
 			children = (
+				AC4DA2BA27D2C78E00189F3F /* EmailValidatorAdapter.swift */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
@@ -1055,6 +1058,7 @@
 					};
 					AC4DA29B27D2BC5600189F3F = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					AC4DA2A227D2BC5800189F3F = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -1281,6 +1285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC4DA2A927D2BC5800189F3F /* EmailValidatorAdapterTests.swift in Sources */,
+				AC4DA2BB27D2C78E00189F3F /* EmailValidatorAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1907,6 +1912,7 @@
 		AC4DA2AC27D2BC5800189F3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1930,6 +1936,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1937,6 +1944,7 @@
 		AC4DA2AD27D2BC5800189F3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
