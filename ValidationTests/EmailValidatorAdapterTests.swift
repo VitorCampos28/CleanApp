@@ -7,6 +7,7 @@
 
 import XCTest
 import Presentation
+import Validation
 
 class EmailValidatorAdapterTests: XCTestCase {
     
