@@ -75,6 +75,7 @@
 		AC50F0BE27E3B86300EB1E55 /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50F0BD27E3B86300EB1E55 /* SignUpIntegrationTests.swift */; };
 		AC50F0BF27E3B8D400EB1E55 /* AddAcountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B45227C6E17000BE728D /* AddAcountSpy.swift */; };
 		AC50F0C027E3B92900EB1E55 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D1B227AD590900452122 /* TextExtensions.swift */; };
+		AC50F0C327E3BF3B00EB1E55 /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50F0C227E3BF3B00EB1E55 /* WeakVarProxy.swift */; };
 		AC63D61127BAE02E00EAF864 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC63D60927BAE02C00EAF864 /* Presentation.framework */; };
 		AC63D61627BAE02E00EAF864 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D61527BAE02E00EAF864 /* SignUpPresenterTests.swift */; };
 		AC63D61F27BAF93600EAF864 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D61E27BAF93600EAF864 /* SignUpPresenter.swift */; };
@@ -353,6 +354,7 @@
 		AC50F0B827E3B58600EB1E55 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		AC50F0BB27E3B60A00EB1E55 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 		AC50F0BD27E3B86300EB1E55 /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
+		AC50F0C227E3BF3B00EB1E55 /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
 		AC63D60927BAE02C00EAF864 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC63D61027BAE02E00EAF864 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC63D61527BAE02E00EAF864 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
@@ -780,6 +782,7 @@
 		AC506ADD27D7F3CB00FBFE7B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AC50F0C127E3BF1900EB1E55 /* Proxies */,
 				AC50F0BA27E3B5F400EB1E55 /* Composers */,
 				AC506B2527D7FA8100FBFE7B /* Factories */,
 				AC506ADE27D7F3CB00FBFE7B /* AppDelegate.swift */,
@@ -823,6 +826,14 @@
 				AC50F0BB27E3B60A00EB1E55 /* SignUpComposer.swift */,
 			);
 			path = Composers;
+			sourceTree = "<group>";
+		};
+		AC50F0C127E3BF1900EB1E55 /* Proxies */ = {
+			isa = PBXGroup;
+			children = (
+				AC50F0C227E3BF3B00EB1E55 /* WeakVarProxy.swift */,
+			);
+			path = Proxies;
 			sourceTree = "<group>";
 		};
 		AC63D60A27BAE02C00EAF864 /* Presentation */ = {
@@ -1586,6 +1597,7 @@
 				AC506ADF27D7F3CB00FBFE7B /* AppDelegate.swift in Sources */,
 				AC506B2727D7FA9F00FBFE7B /* ControllerFactory.swift in Sources */,
 				AC506AE127D7F3CB00FBFE7B /* SceneDelegate.swift in Sources */,
+				AC50F0C327E3BF3B00EB1E55 /* WeakVarProxy.swift in Sources */,
 				AC50F0BC27E3B60A00EB1E55 /* SignUpComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
