@@ -75,6 +75,7 @@
 		AC50F0BF27E3B8D400EB1E55 /* AddAcountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B45227C6E17000BE728D /* AddAcountSpy.swift */; };
 		AC50F0C027E3B92900EB1E55 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D1B227AD590900452122 /* TextExtensions.swift */; };
 		AC50F0C327E3BF3B00EB1E55 /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50F0C227E3BF3B00EB1E55 /* WeakVarProxy.swift */; };
+		AC50F0C827E3D3B500EB1E55 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50F0C727E3D3B500EB1E55 /* Enviroment.swift */; };
 		AC63D61127BAE02E00EAF864 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC63D60927BAE02C00EAF864 /* Presentation.framework */; };
 		AC63D61627BAE02E00EAF864 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D61527BAE02E00EAF864 /* SignUpPresenterTests.swift */; };
 		AC63D61F27BAF93600EAF864 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D61E27BAF93600EAF864 /* SignUpPresenter.swift */; };
@@ -353,6 +354,9 @@
 		AC50F0BB27E3B60A00EB1E55 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 		AC50F0BD27E3B86300EB1E55 /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
 		AC50F0C227E3BF3B00EB1E55 /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
+		AC50F0C527E3D2A300EB1E55 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		AC50F0C627E3D31D00EB1E55 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		AC50F0C727E3D3B500EB1E55 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
 		AC63D60927BAE02C00EAF864 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC63D61027BAE02E00EAF864 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC63D61527BAE02E00EAF864 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
@@ -780,6 +784,7 @@
 		AC506ADD27D7F3CB00FBFE7B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AC50F0C427E3D28900EB1E55 /* Env */,
 				AC50F0C127E3BF1900EB1E55 /* Proxies */,
 				AC50F0BA27E3B5F400EB1E55 /* Composers */,
 				AC506B2527D7FA8100FBFE7B /* Factories */,
@@ -831,6 +836,16 @@
 				AC50F0C227E3BF3B00EB1E55 /* WeakVarProxy.swift */,
 			);
 			path = Proxies;
+			sourceTree = "<group>";
+		};
+		AC50F0C427E3D28900EB1E55 /* Env */ = {
+			isa = PBXGroup;
+			children = (
+				AC50F0C527E3D2A300EB1E55 /* Debug.xcconfig */,
+				AC50F0C627E3D31D00EB1E55 /* Release.xcconfig */,
+				AC50F0C727E3D3B500EB1E55 /* Enviroment.swift */,
+			);
+			path = Env;
 			sourceTree = "<group>";
 		};
 		AC63D60A27BAE02C00EAF864 /* Presentation */ = {
@@ -1592,6 +1607,7 @@
 			files = (
 				AC50F0B927E3B58600EB1E55 /* UseCaseFactory.swift in Sources */,
 				AC506ADF27D7F3CB00FBFE7B /* AppDelegate.swift in Sources */,
+				AC50F0C827E3D3B500EB1E55 /* Enviroment.swift in Sources */,
 				AC506AE127D7F3CB00FBFE7B /* SceneDelegate.swift in Sources */,
 				AC50F0C327E3BF3B00EB1E55 /* WeakVarProxy.swift in Sources */,
 				AC50F0BC27E3B60A00EB1E55 /* SignUpComposer.swift in Sources */,
@@ -2394,6 +2410,7 @@
 		};
 		AC506B0327D7F3DB00FBFE7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC50F0C527E3D2A300EB1E55 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2422,6 +2439,7 @@
 		};
 		AC506B0427D7F3DB00FBFE7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC50F0C627E3D31D00EB1E55 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
