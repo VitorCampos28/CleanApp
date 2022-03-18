@@ -88,6 +88,7 @@
 		AC83B45327C6E17000BE728D /* AddAcountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B45227C6E17000BE728D /* AddAcountSpy.swift */; };
 		AC83B45527C6E1B700BE728D /* LoadingViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B45427C6E1B700BE728D /* LoadingViewSpy.swift */; };
 		AC83B45827C6E2C400BE728D /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B45727C6E2C400BE728D /* TestFactories.swift */; };
+		ACEC642827E5435000DB6E7C /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEC642727E5434F00DB6E7C /* MainQueueDispatchDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -363,6 +364,7 @@
 		AC83B45227C6E17000BE728D /* AddAcountSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAcountSpy.swift; sourceTree = "<group>"; };
 		AC83B45427C6E1B700BE728D /* LoadingViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewSpy.swift; sourceTree = "<group>"; };
 		AC83B45727C6E2C400BE728D /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
+		ACEC642727E5434F00DB6E7C /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -777,6 +779,7 @@
 		AC506ADD27D7F3CB00FBFE7B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				ACEC642627E5432C00DB6E7C /* Decorators */,
 				AC50F0C427E3D28900EB1E55 /* Env */,
 				AC50F0C127E3BF1900EB1E55 /* Proxies */,
 				AC50F0BA27E3B5F400EB1E55 /* Composers */,
@@ -946,6 +949,14 @@
 				AC83B45727C6E2C400BE728D /* TestFactories.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ACEC642627E5432C00DB6E7C /* Decorators */ = {
+			isa = PBXGroup;
+			children = (
+				ACEC642727E5434F00DB6E7C /* MainQueueDispatchDecorator.swift */,
+			);
+			path = Decorators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1570,6 +1581,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC50F0B927E3B58600EB1E55 /* UseCaseFactory.swift in Sources */,
+				ACEC642827E5435000DB6E7C /* MainQueueDispatchDecorator.swift in Sources */,
 				AC506ADF27D7F3CB00FBFE7B /* AppDelegate.swift in Sources */,
 				AC50F0C827E3D3B500EB1E55 /* Enviroment.swift in Sources */,
 				AC506AE127D7F3CB00FBFE7B /* SceneDelegate.swift in Sources */,
