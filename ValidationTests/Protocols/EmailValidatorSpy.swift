@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Presentation
+import Validation
 
 class EmailValidatorSpy: EmailValidator {
     var isValid = true
@@ -20,3 +20,4 @@ class EmailValidatorSpy: EmailValidator {
         isValid = false
     }
 }
+
