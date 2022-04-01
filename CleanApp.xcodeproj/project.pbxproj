@@ -110,6 +110,7 @@
 		ACE7B73927F774B5008D72AF /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73827F774B5008D72AF /* RoundedTextField.swift */; };
 		ACE7B73B27F77800008D72AF /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73A27F77800008D72AF /* NavigationController.swift */; };
 		ACE7B73C27F77AA9008D72AF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73527F773CC008D72AF /* Color.swift */; };
+		ACE7B73E27F79055008D72AF /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73D27F79055008D72AF /* Authentication.swift */; };
 		ACEC642827E5435000DB6E7C /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEC642727E5434F00DB6E7C /* MainQueueDispatchDecorator.swift */; };
 /* End PBXBuildFile section */
 
@@ -411,6 +412,7 @@
 		ACE7B73527F773CC008D72AF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		ACE7B73827F774B5008D72AF /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		ACE7B73A27F77800008D72AF /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		ACE7B73D27F79055008D72AF /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		ACEC642727E5434F00DB6E7C /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -639,6 +641,7 @@
 			isa = PBXGroup;
 			children = (
 				AC11136F27A8C934003B9000 /* AddAcount.swift */,
+				ACE7B73D27F79055008D72AF /* Authentication.swift */,
 			);
 			path = UseCasses;
 			sourceTree = "<group>";
@@ -1634,6 +1637,7 @@
 				AC141F6627AAA3B0001778DE /* Model.swift in Sources */,
 				AC11137027A8C934003B9000 /* AddAcount.swift in Sources */,
 				AC141F7527AB18BC001778DE /* DomainError.swift in Sources */,
+				ACE7B73E27F79055008D72AF /* Authentication.swift in Sources */,
 				AC11137227A8CAC5003B9000 /* AccountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
