@@ -11,7 +11,6 @@ import XCTest
 import Main
 import IOSUI
 import Validation
-@testable import ValidationTests
 
 class SignUpComposerTests: XCTestCase {
 

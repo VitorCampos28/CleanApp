@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IOSUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -16,7 +17,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         let httpClient = makeAlamofireAdapter()
         let addAcount = makeRemoteAddAccount(httpClient: httpClient)
-        window?.rootViewController = makeSignUpController(addAccount: addAcount)
+        let signUpController = makeSignUpController(addAccount: addAcount)
+        let nav = NavigationController(rootViewController: signUpController)
+        window?.rootViewController = nav
         window?.makeKeyAndVisible()
     }
 

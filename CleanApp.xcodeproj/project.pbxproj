@@ -95,6 +95,7 @@
 		AC5516DD27EBB57700AEDA90 /* ApiUrlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5516DC27EBB57700AEDA90 /* ApiUrlFactory.swift */; };
 		AC5516E227EBB67800AEDA90 /* AlamofireAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5516E127EBB67800AEDA90 /* AlamofireAdapterFactory.swift */; };
 		AC5516E427EBBA2600AEDA90 /* EmailValidatorAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5516E327EBBA2500AEDA90 /* EmailValidatorAdapter.swift */; };
+		AC5516E727EBBD3100AEDA90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5516E627EBBD3100AEDA90 /* Images.xcassets */; };
 		AC63D61127BAE02E00EAF864 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC63D60927BAE02C00EAF864 /* Presentation.framework */; };
 		AC63D61627BAE02E00EAF864 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D61527BAE02E00EAF864 /* SignUpPresenterTests.swift */; };
 		AC63D61F27BAF93600EAF864 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63D61E27BAF93600EAF864 /* SignUpPresenter.swift */; };
@@ -104,6 +105,11 @@
 		AC83B45327C6E17000BE728D /* AddAcountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B45227C6E17000BE728D /* AddAcountSpy.swift */; };
 		AC83B45527C6E1B700BE728D /* LoadingViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B45427C6E1B700BE728D /* LoadingViewSpy.swift */; };
 		AC83B45827C6E2C400BE728D /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B45727C6E2C400BE728D /* TestFactories.swift */; };
+		ACE7B73427F77075008D72AF /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73327F77075008D72AF /* UIColorExtensions.swift */; };
+		ACE7B73627F773CC008D72AF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73527F773CC008D72AF /* Color.swift */; };
+		ACE7B73927F774B5008D72AF /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73827F774B5008D72AF /* RoundedTextField.swift */; };
+		ACE7B73B27F77800008D72AF /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73A27F77800008D72AF /* NavigationController.swift */; };
+		ACE7B73C27F77AA9008D72AF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73527F773CC008D72AF /* Color.swift */; };
 		ACEC642827E5435000DB6E7C /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEC642727E5434F00DB6E7C /* MainQueueDispatchDecorator.swift */; };
 /* End PBXBuildFile section */
 
@@ -388,6 +394,7 @@
 		AC5516DC27EBB57700AEDA90 /* ApiUrlFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrlFactory.swift; sourceTree = "<group>"; };
 		AC5516E127EBB67800AEDA90 /* AlamofireAdapterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterFactory.swift; sourceTree = "<group>"; };
 		AC5516E327EBBA2500AEDA90 /* EmailValidatorAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorAdapter.swift; sourceTree = "<group>"; };
+		AC5516E627EBBD3100AEDA90 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AC63D60927BAE02C00EAF864 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC63D61027BAE02E00EAF864 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC63D61527BAE02E00EAF864 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
@@ -400,6 +407,10 @@
 		AC83B45227C6E17000BE728D /* AddAcountSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAcountSpy.swift; sourceTree = "<group>"; };
 		AC83B45427C6E1B700BE728D /* LoadingViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewSpy.swift; sourceTree = "<group>"; };
 		AC83B45727C6E2C400BE728D /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
+		ACE7B73327F77075008D72AF /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		ACE7B73527F773CC008D72AF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		ACE7B73827F774B5008D72AF /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		ACE7B73A27F77800008D72AF /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		ACEC642727E5434F00DB6E7C /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -607,6 +618,8 @@
 		AC1362EC27C801D000D8A619 /* IOSUI */ = {
 			isa = PBXGroup;
 			children = (
+				ACE7B73727F77499008D72AF /* Components */,
+				AC5516E527EBBD0000AEDA90 /* Resources */,
 				AC4DA29027D2B16700189F3F /* Helpers */,
 				AC22D31D27D01156009B1957 /* Scenes */,
 			);
@@ -848,8 +861,10 @@
 		AC4DA29027D2B16700189F3F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				ACE7B73327F77075008D72AF /* UIColorExtensions.swift */,
 				AC4DA29127D2B18A00189F3F /* UIViewControllerExtension.swift */,
 				AC4DA29327D2B2FC00189F3F /* StoryBoarded.swift */,
+				ACE7B73527F773CC008D72AF /* Color.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -959,6 +974,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		AC5516E527EBBD0000AEDA90 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC5516E627EBBD3100AEDA90 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		AC63D60A27BAE02C00EAF864 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1062,6 +1085,15 @@
 				AC83B45727C6E2C400BE728D /* TestFactories.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ACE7B73727F77499008D72AF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7B73827F774B5008D72AF /* RoundedTextField.swift */,
+				ACE7B73A27F77800008D72AF /* NavigationController.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		ACEC642627E5432C00DB6E7C /* Decorators */ = {
@@ -1516,6 +1548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC13630527C806FB00D8A619 /* SignUp.storyboard in Resources */,
+				AC5516E727EBBD3100AEDA90 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1633,8 +1666,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC4DA29427D2B2FC00189F3F /* StoryBoarded.swift in Sources */,
+				ACE7B73927F774B5008D72AF /* RoundedTextField.swift in Sources */,
 				AC4DA29227D2B18A00189F3F /* UIViewControllerExtension.swift in Sources */,
 				AC13630327C8069D00D8A619 /* SignUpViewController.swift in Sources */,
+				ACE7B73627F773CC008D72AF /* Color.swift in Sources */,
+				ACE7B73B27F77800008D72AF /* NavigationController.swift in Sources */,
+				ACE7B73427F77075008D72AF /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1644,6 +1681,7 @@
 			files = (
 				AC1362F827C801D100D8A619 /* SignUpViewControllerTests.swift in Sources */,
 				AC22D32127D011B4009B1957 /* TesteExtensions.swift in Sources */,
+				ACE7B73C27F77AA9008D72AF /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
