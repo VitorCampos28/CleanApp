@@ -19,13 +19,12 @@ public final class RemoteAuthentication {
         httpClient.post(to: url, with: authenticationModel.toData()) { [weak self] result in
             guard self != nil else { return }
             switch result {
-            case .success: break
-//            case .success(let data):
-//                if let model: AccountModel = data?.toModel() {
-//                    completion(.success(model))
-//                } else {
-//                    completion(.failure(.unexpected))
-//                }
+            case .success(let data):
+                if let model: AccountModel = data?.toModel() {
+                    completion(.success(model))
+                } else {
+                    completion(.failure(.unexpected))
+                }
             case .failure(let error):
                 switch error {
                 case .unauthorized:
