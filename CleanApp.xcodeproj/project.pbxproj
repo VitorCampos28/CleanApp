@@ -108,6 +108,8 @@
 		ACA2C46927FF74140078F125 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2C46827FF74140078F125 /* LoginPresenterTests.swift */; };
 		ACA2C46C27FF756A0078F125 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2C46B27FF756A0078F125 /* LoginViewModel.swift */; };
 		ACA2C46E27FF7F8B0078F125 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2C46D27FF7F8B0078F125 /* LoginPresenter.swift */; };
+		ACA2C47027FF82FA0078F125 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2C46F27FF82FA0078F125 /* AuthenticationSpy.swift */; };
+		ACA2C47127FF83340078F125 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2C46F27FF82FA0078F125 /* AuthenticationSpy.swift */; };
 		ACE7B73427F77075008D72AF /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73327F77075008D72AF /* UIColorExtensions.swift */; };
 		ACE7B73627F773CC008D72AF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73527F773CC008D72AF /* Color.swift */; };
 		ACE7B73927F774B5008D72AF /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73827F774B5008D72AF /* RoundedTextField.swift */; };
@@ -416,6 +418,7 @@
 		ACA2C46827FF74140078F125 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
 		ACA2C46B27FF756A0078F125 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		ACA2C46D27FF7F8B0078F125 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		ACA2C46F27FF82FA0078F125 /* AuthenticationSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSpy.swift; sourceTree = "<group>"; };
 		ACE7B73327F77075008D72AF /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		ACE7B73527F773CC008D72AF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		ACE7B73827F774B5008D72AF /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
@@ -1092,6 +1095,7 @@
 			isa = PBXGroup;
 			children = (
 				AC83B45227C6E17000BE728D /* AddAcountSpy.swift */,
+				ACA2C46F27FF82FA0078F125 /* AuthenticationSpy.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -1802,6 +1806,7 @@
 				AC1F267127E5331E00E98BE6 /* SignUpFactoryTest.swift in Sources */,
 				AC1F267227E537BC00E98BE6 /* TestFactories.swift in Sources */,
 				AC50F0C027E3B92900EB1E55 /* TextExtensions.swift in Sources */,
+				ACA2C47127FF83340078F125 /* AuthenticationSpy.swift in Sources */,
 				AC1A771727EA541500E02E89 /* EmailValidatorSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1832,6 +1837,7 @@
 				AC12876327BC08E1007510FF /* TextExtensions.swift in Sources */,
 				AC1CF9B227E90F07001AC538 /* ValidationSpy.swift in Sources */,
 				AC83B45827C6E2C400BE728D /* TestFactories.swift in Sources */,
+				ACA2C47027FF82FA0078F125 /* AuthenticationSpy.swift in Sources */,
 				AC63D61627BAE02E00EAF864 /* SignUpPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
