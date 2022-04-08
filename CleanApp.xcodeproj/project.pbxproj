@@ -18,7 +18,6 @@
 		AC12876527BC1DEB007510FF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12876427BC1DEB007510FF /* LoadingView.swift */; };
 		AC1362F327C801D100D8A619 /* IOSUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1362EB27C801D000D8A619 /* IOSUI.framework */; };
 		AC1362F827C801D100D8A619 /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1362F727C801D100D8A619 /* SignUpViewControllerTests.swift */; };
-		AC13630327C8069D00D8A619 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC13630227C8069D00D8A619 /* SignUpViewController.swift */; };
 		AC13630527C806FB00D8A619 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC13630427C806FB00D8A619 /* SignUp.storyboard */; };
 		AC13630627C80A6900D8A619 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC63D60927BAE02C00EAF864 /* Presentation.framework */; };
 		AC13630727C80A6900D8A619 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC63D60927BAE02C00EAF864 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -112,10 +111,9 @@
 		ACA2C47127FF83340078F125 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2C46F27FF82FA0078F125 /* AuthenticationSpy.swift */; };
 		ACA2C47427FF8E000078F125 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA2C47327FF8E000078F125 /* Login.storyboard */; };
 		ACA2C47527FF8E000078F125 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA2C47327FF8E000078F125 /* Login.storyboard */; };
-		ACA2C47927FF915E0078F125 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2C47827FF915E0078F125 /* LoginViewControllerTests.swift */; };
-		ACA2C47A27FF915E0078F125 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2C47827FF915E0078F125 /* LoginViewControllerTests.swift */; };
-		ACA2C47C27FF91D40078F125 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2C47B27FF91D40078F125 /* LoginViewController.swift */; };
-		ACA2C47D27FF91D40078F125 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2C47B27FF91D40078F125 /* LoginViewController.swift */; };
+		ACA2C47E27FF97A10078F125 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2C47827FF915E0078F125 /* LoginViewControllerTests.swift */; };
+		ACA2C48027FF98D60078F125 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC13630227C8069D00D8A619 /* SignUpViewController.swift */; };
+		ACA2C48127FF98DB0078F125 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2C47B27FF91D40078F125 /* LoginViewController.swift */; };
 		ACE7B73427F77075008D72AF /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73327F77075008D72AF /* UIColorExtensions.swift */; };
 		ACE7B73627F773CC008D72AF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73527F773CC008D72AF /* Color.swift */; };
 		ACE7B73927F774B5008D72AF /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73827F774B5008D72AF /* RoundedTextField.swift */; };
@@ -1744,12 +1742,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACA2C47C27FF91D40078F125 /* LoginViewController.swift in Sources */,
 				AC4DA29427D2B2FC00189F3F /* StoryBoarded.swift in Sources */,
+				ACA2C48027FF98D60078F125 /* SignUpViewController.swift in Sources */,
 				ACE7B73927F774B5008D72AF /* RoundedTextField.swift in Sources */,
 				AC4DA29227D2B18A00189F3F /* UIViewControllerExtension.swift in Sources */,
-				AC13630327C8069D00D8A619 /* SignUpViewController.swift in Sources */,
-				ACA2C47927FF915E0078F125 /* LoginViewControllerTests.swift in Sources */,
+				ACA2C48127FF98DB0078F125 /* LoginViewController.swift in Sources */,
 				ACE7B73627F773CC008D72AF /* Color.swift in Sources */,
 				ACE7B73B27F77800008D72AF /* NavigationController.swift in Sources */,
 				ACE7B73427F77075008D72AF /* UIColorExtensions.swift in Sources */,
@@ -1760,10 +1757,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACA2C47A27FF915E0078F125 /* LoginViewControllerTests.swift in Sources */,
 				AC1362F827C801D100D8A619 /* SignUpViewControllerTests.swift in Sources */,
 				AC22D32127D011B4009B1957 /* TesteExtensions.swift in Sources */,
-				ACA2C47D27FF91D40078F125 /* LoginViewController.swift in Sources */,
+				ACA2C47E27FF97A10078F125 /* LoginViewControllerTests.swift in Sources */,
 				ACE7B73C27F77AA9008D72AF /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -31,17 +31,17 @@ public final class LoginViewController: UIViewController, StoryBoarded  {
 }
 
 
-//extension SignUpViewController: LoadingView {
-//    public func display(viewModel: LoadingViewModel) {
-//        if viewModel.isLoading {
-//            view.isUserInteractionEnabled = false
-//            loadingIndicator.startAnimating()
-//        } else {
-//            view.isUserInteractionEnabled = true
-//            loadingIndicator.stopAnimating()
-//        }
-//    }
-//}
+extension LoginViewController: LoadingView {
+    public func display(viewModel: LoadingViewModel) {
+        if viewModel.isLoading {
+            view.isUserInteractionEnabled = false
+            loadingIndicator.startAnimating()
+        } else {
+            view.isUserInteractionEnabled = true
+            loadingIndicator.stopAnimating()
+        }
+    }
+}
 //
 //extension SignUpViewController: AlertView {
 //    public func showMessage(viewModel: AlertViewModel) {
