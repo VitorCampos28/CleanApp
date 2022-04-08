@@ -10,9 +10,11 @@ import Presentation
 
 public final class LoginViewController: UIViewController, StoryBoarded  {
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var emailTextField: RoundedTextField!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var passwordTextField: RoundedTextField!
     
-    public var signUp: ((SignUpViewModel) -> Void)?
+    public var login: ((LoginViewModel) -> Void)?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,13 +23,14 @@ public final class LoginViewController: UIViewController, StoryBoarded  {
     private func configure() {
         title = "4Dev"
         loginButton.layer.cornerRadius = 5
-//        saveButton.addTarget(self, action: #selector(saveButtonTapped), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         hideKeyboardOnTap()
     }
     
-//    @objc private func saveButtonTapped() {
-//        signUp?(SignUpViewModel(name: nameTextField.text, email: emailTextField.text, password: passwordTextField.text, passwordConfirmation: confirmationTextField.text))
-//    }
+    @objc private func loginButtonTapped() {
+        let viewModel = LoginViewModel(email: emailTextField.text, password: passwordTextField.text)
+        login?(viewModel)
+    }
 }
 
 
@@ -42,11 +45,11 @@ extension LoginViewController: LoadingView {
         }
     }
 }
-//
-//extension SignUpViewController: AlertView {
-//    public func showMessage(viewModel: AlertViewModel) {
-//        let alert = UIAlertController(title: viewModel.title, message: viewModel.message, preferredStyle: .alert)
-//        alert.addAction(UIAlertAction(title: "OK", style: .default))
-//        present(alert, animated: true)
-//    }
-//}
+
+extension LoginViewController: AlertView {
+    public func showMessage(viewModel: AlertViewModel) {
+        let alert = UIAlertController(title: viewModel.title, message: viewModel.message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
+}

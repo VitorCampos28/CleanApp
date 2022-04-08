@@ -21,26 +21,26 @@ class LoginViewControllerTests: XCTestCase {
         let sut = makeSut()
         XCTAssertNotNil(sut as LoadingView)
     }
-    //    func test_sut_implements_alertView() {
-    //        let sut = makeSut()
-    //        XCTAssertNotNil(sut as AlertView)
-    //   }
-    //    func test_saveButton_calls_signUp_on_tap() {
-    //        var signUpViewModel: SignUpViewModel?
-    //        let sut = makeSut(signUpSpy: { signUpViewModel = $0 })
-    //        sut.saveButton?.simulateTap()
-    //        let name = sut.nameTextField.text
-    //        let email = sut.emailTextField.text
-    //        let password = sut.passwordTextField.text
-    //        let confirmation = sut.confirmationTextField.text
-    //        XCTAssertEqual(signUpViewModel, SignUpViewModel(name: name, email: email, password: password, passwordConfirmation: confirmation))
-    //   }
+        func test_sut_implements_alertView() {
+            let sut = makeSut()
+            XCTAssertNotNil(sut as AlertView)
+       }
+        func test_loginButton_calls_signUp_on_tap() {
+            var loginViewModel: LoginViewModel?
+            let sut = makeSut(loginSpy: { loginViewModel = $0 })
+            sut.loginButton?.simulateTap()
+            let email = sut.emailTextField.text
+            let password = sut.passwordTextField.text
+            XCTAssertEqual(loginViewModel, LoginViewModel(email: email, password: password))
+       }
     
 }
 
 extension LoginViewControllerTests{
-    func makeSut() -> LoginViewController {
+    func makeSut(loginSpy: ((LoginViewModel) -> Void)? = nil) -> LoginViewController {
         let sut = LoginViewController.instantiate()
+        sut.login = loginSpy
+        checkMemoryLeak(for: sut)
         sut.loadViewIfNeeded()
         return sut
     }
