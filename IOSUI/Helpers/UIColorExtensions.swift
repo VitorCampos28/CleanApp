@@ -13,7 +13,7 @@ extension UIColor {
         var red: CGFloat = 0.0
         var green: CGFloat = 0.0
         var blue: CGFloat = 0.0
-        var alpha: CGFloat = 1.0
+        let alpha: CGFloat = 1.0
         
         if hex.hasPrefix("#") {
             let index = hex.index(hex.startIndex, offsetBy: 1)
