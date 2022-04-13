@@ -25,7 +25,7 @@ class LoginViewControllerTests: XCTestCase {
             let sut = makeSut()
             XCTAssertNotNil(sut as AlertView)
        }
-        func test_loginButton_calls_signUp_on_tap() {
+        func test_loginButton_calls_login_on_tap() {
             var loginViewModel: LoginViewModel?
             let sut = makeSut(loginSpy: { loginViewModel = $0 })
             sut.loginButton?.simulateTap()
