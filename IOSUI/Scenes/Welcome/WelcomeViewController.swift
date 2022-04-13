@@ -11,7 +11,6 @@ import Presentation
 public final class WelcomeViewController: UIViewController, StoryBoarded  {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
-    
     public var login: (() -> Void)?
     public var signUp: (() -> Void)?
     

@@ -1,5 +1,5 @@
 //
-//  SignUpViewModel.swift
+//  SignUpRequest.swift
 //  Presentation
 //
 //  Created by Vitor Natal de Oliveira Campos on 23/02/22.
@@ -8,7 +8,7 @@
 import Foundation
 import Domain
 
-public struct SignUpViewModel: Model {
+public struct SignUpRequest: Model {
     public var name: String?
     public var email:String?
     public var password: String?
