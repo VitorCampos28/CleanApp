@@ -118,6 +118,7 @@
 		ACA2C47E27FF97A10078F125 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2C47827FF915E0078F125 /* LoginViewControllerTests.swift */; };
 		ACA2C48027FF98D60078F125 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC13630227C8069D00D8A619 /* SignUpViewController.swift */; };
 		ACA2C48127FF98DB0078F125 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2C47B27FF91D40078F125 /* LoginViewController.swift */; };
+		ACE6ED7E28073D0900FDF31B /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE6ED7D28073D0900FDF31B /* Welcome.storyboard */; };
 		ACE7B73427F77075008D72AF /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73327F77075008D72AF /* UIColorExtensions.swift */; };
 		ACE7B73627F773CC008D72AF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73527F773CC008D72AF /* Color.swift */; };
 		ACE7B73927F774B5008D72AF /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73827F774B5008D72AF /* RoundedTextField.swift */; };
@@ -433,6 +434,7 @@
 		ACA2C47327FF8E000078F125 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		ACA2C47827FF915E0078F125 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		ACA2C47B27FF91D40078F125 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ACE6ED7D28073D0900FDF31B /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		ACE7B73327F77075008D72AF /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		ACE7B73527F773CC008D72AF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		ACE7B73827F774B5008D72AF /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
@@ -647,6 +649,7 @@
 		AC1362EC27C801D000D8A619 /* IOSUI */ = {
 			isa = PBXGroup;
 			children = (
+				ACE6ED7C28073CA600FDF31B /* Welcome */,
 				ACE7B73727F77499008D72AF /* Components */,
 				AC5516E527EBBD0000AEDA90 /* Resources */,
 				AC4DA29027D2B16700189F3F /* Helpers */,
@@ -1169,6 +1172,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		ACE6ED7C28073CA600FDF31B /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				ACE6ED7D28073D0900FDF31B /* Welcome.storyboard */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
 		ACE7B73727F77499008D72AF /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -1630,6 +1641,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC13630527C806FB00D8A619 /* SignUp.storyboard in Resources */,
+				ACE6ED7E28073D0900FDF31B /* Welcome.storyboard in Resources */,
 				AC5516E727EBBD3100AEDA90 /* Images.xcassets in Resources */,
 				ACA2C47427FF8E000078F125 /* Login.storyboard in Resources */,
 			);
