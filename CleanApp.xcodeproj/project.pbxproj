@@ -130,6 +130,7 @@
 		ACE7B74027F7924B008D72AF /* RemoteAutheticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B73F27F7924B008D72AF /* RemoteAutheticationTests.swift */; };
 		ACE7B74227F79383008D72AF /* RemoteAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7B74127F79383008D72AF /* RemoteAuthentication.swift */; };
 		ACEC642827E5435000DB6E7C /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEC642727E5434F00DB6E7C /* MainQueueDispatchDecorator.swift */; };
+		ACF782082808A0A4008474D1 /* WelcomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF782072808A0A4008474D1 /* WelcomeRouterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -447,6 +448,7 @@
 		ACE7B73F27F7924B008D72AF /* RemoteAutheticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAutheticationTests.swift; sourceTree = "<group>"; };
 		ACE7B74127F79383008D72AF /* RemoteAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAuthentication.swift; sourceTree = "<group>"; };
 		ACEC642727E5434F00DB6E7C /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
+		ACF782072808A0A4008474D1 /* WelcomeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1029,6 +1031,7 @@
 			isa = PBXGroup;
 			children = (
 				AC572CDA28075B5A0016087F /* WelcomeViewControllerTests.swift */,
+				ACF782072808A0A4008474D1 /* WelcomeRouterTests.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -1795,6 +1798,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC1362F827C801D100D8A619 /* SignUpViewControllerTests.swift in Sources */,
+				ACF782082808A0A4008474D1 /* WelcomeRouterTests.swift in Sources */,
 				AC22D32127D011B4009B1957 /* TesteExtensions.swift in Sources */,
 				ACA2C47E27FF97A10078F125 /* LoginViewControllerTests.swift in Sources */,
 				ACE7B73C27F77AA9008D72AF /* Color.swift in Sources */,
