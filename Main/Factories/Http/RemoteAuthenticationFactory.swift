@@ -11,8 +11,11 @@ import DataLayer
 import Domain
 
 
+func makeRemoteAuthentication() -> Authentication {
+    return makeRemoteAuthenticationWith(httpClient: makeAlamofireAdapter())
+}
 
-func makeRemoteAuthentication(httpClient: HttpPostClient) -> Authentication {
+func makeRemoteAuthenticationWith(httpClient: HttpPostClient) -> Authentication {
     let remoteAuthentication = RemoteAuthentication(url: makeApiUrl(path: "login"), httpClient: httpClient)
     return MainQueueDispatchDecorator(remoteAuthentication)
 }

@@ -10,8 +10,11 @@ import DataLayer
 import Domain
 
 
+func makeRemoteAddAccount() -> AddAccount {
+    return makeRemoteAddAccountWith(httpClient: makeAlamofireAdapter())
+}
 
-func makeRemoteAddAccount(httpClient: HttpPostClient) -> AddAccount {
+func makeRemoteAddAccountWith(httpClient: HttpPostClient) -> AddAccount {
     let remoteAddAcount =  RemoteAddAccount(url: makeApiUrl(path: "signup"), httpClient: httpClient)
     return MainQueueDispatchDecorator(remoteAddAcount)
 }

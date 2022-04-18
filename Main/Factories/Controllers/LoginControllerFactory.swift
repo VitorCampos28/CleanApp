@@ -15,7 +15,11 @@ public final class LoginControllerFactory {
 
 }
 
-public func makeLoginController(authentication: Authentication) -> LoginViewController{
+public func makeLoginController() -> LoginViewController{
+    return makeLoginControllerWith(authentication: makeRemoteAuthentication())
+}
+
+public func makeLoginControllerWith(authentication: Authentication) -> LoginViewController{
     let controller =  LoginViewController.instantiate()
     let validationComposite = ValidationComposite(validations: makeSignUpValidations())
     let presenter = LoginPresenter(validation: validationComposite, alertView: WeakVarProxy(controller), authentication: authentication, loadingView: WeakVarProxy(controller))

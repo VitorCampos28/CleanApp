@@ -8,11 +8,11 @@
 import Foundation
 
 public final class WelcomeRouter {
-    private let nav: NavigationController
+    private let nav: NavigationControllerCustom
     private let loginFactory: () -> LoginViewController
     private let signUpFactory: () -> SignUpViewController
     
-    public init(nav: NavigationController, loginFactory: @escaping () -> LoginViewController, signUpFactory: @escaping () -> SignUpViewController){
+    public init(nav: NavigationControllerCustom, loginFactory: @escaping () -> LoginViewController, signUpFactory: @escaping () -> SignUpViewController){
         self.nav = nav
         self.loginFactory = loginFactory
         self.signUpFactory = signUpFactory
