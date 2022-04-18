@@ -46,6 +46,7 @@
 		AC1CF9C127E917D2001AC538 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D1B227AD590900452122 /* TextExtensions.swift */; };
 		AC1CF9C527E91913001AC538 /* CompareFieldsValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF9C427E91913001AC538 /* CompareFieldsValidationTests.swift */; };
 		AC1CF9C927E9197D001AC538 /* CompareFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF9C827E9197D001AC538 /* CompareFieldValidation.swift */; };
+		AC1D01CD280DE73200561D57 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D01CC280DE73200561D57 /* WelcomeRouter.swift */; };
 		AC1F267127E5331E00E98BE6 /* SignUpControllerFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1F267027E5331E00E98BE6 /* SignUpControllerFactoryTests.swift */; };
 		AC1F267227E537BC00E98BE6 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B45727C6E2C400BE728D /* TestFactories.swift */; };
 		AC22D32127D011B4009B1957 /* TesteExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC22D32027D011B4009B1957 /* TesteExtensions.swift */; };
@@ -377,6 +378,7 @@
 		AC1CF9BF27E91704001AC538 /* RequiredFieldValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidation.swift; sourceTree = "<group>"; };
 		AC1CF9C427E91913001AC538 /* CompareFieldsValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareFieldsValidationTests.swift; sourceTree = "<group>"; };
 		AC1CF9C827E9197D001AC538 /* CompareFieldValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareFieldValidation.swift; sourceTree = "<group>"; };
+		AC1D01CC280DE73200561D57 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
 		AC1F267027E5331E00E98BE6 /* SignUpControllerFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpControllerFactoryTests.swift; sourceTree = "<group>"; };
 		AC22D32027D011B4009B1957 /* TesteExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteExtensions.swift; sourceTree = "<group>"; };
 		AC36D1B227AD590900452122 /* TextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtensions.swift; sourceTree = "<group>"; };
@@ -1193,6 +1195,7 @@
 			children = (
 				AC572CDC28075CE70016087F /* WelcomeViewController.swift */,
 				ACE6ED7D28073D0900FDF31B /* Welcome.storyboard */,
+				AC1D01CC280DE73200561D57 /* WelcomeRouter.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -1784,6 +1787,7 @@
 				AC572CDD28075CE70016087F /* WelcomeViewController.swift in Sources */,
 				AC4DA29427D2B2FC00189F3F /* StoryBoarded.swift in Sources */,
 				ACA2C48027FF98D60078F125 /* SignUpViewController.swift in Sources */,
+				AC1D01CD280DE73200561D57 /* WelcomeRouter.swift in Sources */,
 				ACE7B73927F774B5008D72AF /* RoundedTextField.swift in Sources */,
 				AC4DA29227D2B18A00189F3F /* UIViewControllerExtension.swift in Sources */,
 				ACA2C48127FF98DB0078F125 /* LoginViewController.swift in Sources */,
